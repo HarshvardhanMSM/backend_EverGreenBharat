@@ -35,7 +35,8 @@ export class FixFoundationPhase3B1700000000005 implements MigrationInterface {
       );
     }
 
-    // user_blocks: entity exists, table was never created by any migration
+    // user_blocks: drop legacy camelCase table from migration 1 and recreate with snake_case columns
+    await queryRunner.query(`DROP TABLE IF EXISTS "user_blocks" CASCADE`);
     await queryRunner.query(`
       CREATE TABLE IF NOT EXISTS "user_blocks" (
         "blocker_id" uuid NOT NULL,
