@@ -8,24 +8,24 @@ export class RefreshToken extends BaseEntity {
   userId: string | null;
 
   @Index('IDX_refresh_tokens_familyId')
-  @Column({ type: 'uuid' })
+  @Column({ name: 'family_id', type: 'uuid' })
   familyId: string;
 
   @Index('IDX_refresh_tokens_hash')
-  @Column({ type: 'varchar', length: 255, unique: true })
+  @Column({ name: 'token_hash', type: 'varchar', length: 255, unique: true })
   tokenHash: string;
 
-  @Column({ type: 'text', nullable: true })
+  @Column({ name: 'device_info', type: 'text', nullable: true })
   deviceInfo: string | null;
 
-  @Column({ type: 'varchar', length: 45, nullable: true })
+  @Column({ name: 'ip_address', type: 'varchar', length: 45, nullable: true })
   ipAddress: string | null;
 
   @Index('IDX_refresh_tokens_revoked')
-  @Column({ type: 'boolean', default: false })
+  @Column({ name: 'is_revoked', type: 'boolean', default: false })
   isRevoked: boolean;
 
   @Index('IDX_refresh_tokens_expiresAt')
-  @Column({ type: 'timestamp' })
+  @Column({ name: 'expires_at', type: 'timestamp' })
   expiresAt: Date;
 }

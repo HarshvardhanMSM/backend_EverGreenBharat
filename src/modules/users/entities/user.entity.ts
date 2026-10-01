@@ -36,6 +36,7 @@ export class User extends BaseEntity {
 
   @Index('IDX_users_google_id')
   @Column({
+    name: 'google_id',
     type: 'varchar',
     length: 128,
     unique: true,
@@ -44,6 +45,7 @@ export class User extends BaseEntity {
   googleId: string | null;
 
   @Column({
+    name: 'auth_provider',
     type: 'varchar',
     length: 20,
     default: AuthProvider.LOCAL,
@@ -51,6 +53,7 @@ export class User extends BaseEntity {
   authProvider: AuthProvider;
 
   @Column({
+    name: 'is_phone_verified',
     type: 'boolean',
     default: false,
   })
@@ -92,6 +95,7 @@ export class User extends BaseEntity {
   lastName: string | null;
 
   @Column({
+    name: 'avatar_url',
     type: 'text',
     nullable: true,
   })
@@ -145,6 +149,7 @@ export class User extends BaseEntity {
   timezone: string;
 
   @Column({
+    name: 'preferred_content_languages',
     type: 'jsonb',
     default: () => "'[]'::jsonb",
   })
@@ -152,6 +157,7 @@ export class User extends BaseEntity {
 
   @Index('IDX_users_onboarding_status')
   @Column({
+    name: 'onboarding_status',
     type: 'varchar',
     length: 30,
     default: OnboardingStatus.ACCOUNT_CREATED,
@@ -209,24 +215,28 @@ export class User extends BaseEntity {
   verificationStatus: VerificationStatus;
 
   @Column({
+    name: 'is_email_verified',
     type: 'boolean',
     default: false,
   })
   isEmailVerified: boolean;
 
   @Column({
+    name: 'failed_login_attempts',
     type: 'int',
     default: 0,
   })
   failedLoginAttempts: number;
 
   @Column({
+    name: 'lockout_until',
     type: 'timestamp',
     nullable: true,
   })
   lockoutUntil: Date | null;
 
   @Column({
+    name: 'last_login_at',
     type: 'timestamp',
     nullable: true,
   })

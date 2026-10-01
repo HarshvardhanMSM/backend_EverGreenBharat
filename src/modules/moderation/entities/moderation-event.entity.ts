@@ -6,11 +6,11 @@ import { Admin } from '../../admin/entities/admin.entity';
 @Entity('moderation_events')
 export class ModerationEvent extends BaseEntity {
   @Index('IDX_moderation_events_admin_id')
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'admin_id', type: 'uuid', nullable: true })
   adminId: string | null;
 
   @Index('IDX_moderation_events_user_id')
-  @Column({ type: 'uuid' })
+  @Column({ name: 'user_id', type: 'uuid' })
   userId: string;
 
   @Index('IDX_moderation_events_action')

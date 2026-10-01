@@ -30,7 +30,7 @@ export class Admin extends BaseEntity {
   @Column({ type: 'varchar', length: 255, nullable: true })
   avatarUrl: string | null;
 
-  @Column({ type: 'boolean', default: false })
+  @Column({ name: 'is_super_admin', type: 'boolean', default: false })
   isSuperAdmin: boolean;
 
   @Column({ type: 'varchar', length: 100, nullable: true })
@@ -52,19 +52,19 @@ export class Admin extends BaseEntity {
   @Column({ type: 'timestamp', nullable: true })
   lockoutUntil: Date | null;
 
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'created_by_id', type: 'uuid', nullable: true })
   createdById: string | null;
 
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'updated_by_id', type: 'uuid', nullable: true })
   updatedById: string | null;
 
-  @Column({ type: 'timestamp', nullable: true })
+  @Column({ name: 'last_login_at', type: 'timestamp', nullable: true })
   lastLoginAt: Date | null;
 
-  @Column({ type: 'varchar', length: 45, nullable: true })
+  @Column({ name: 'last_login_ip', type: 'varchar', length: 45, nullable: true })
   lastLoginIp: string | null;
 
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'user_id', type: 'uuid', nullable: true })
   userId: string | null;
 
   @OneToMany(() => AdminRoleEntity, (adminRole) => adminRole.admin)

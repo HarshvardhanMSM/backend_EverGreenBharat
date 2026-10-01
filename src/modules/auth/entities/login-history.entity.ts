@@ -9,11 +9,11 @@ export enum LoginStatus {
 @Entity('login_history')
 export class LoginHistory extends BaseEntity {
   @Index('IDX_login_history_user_id')
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'user_id', type: 'uuid', nullable: true })
   userId: string | null;
 
   @Index('IDX_login_history_admin_id')
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'admin_id', type: 'uuid', nullable: true })
   adminId: string | null;
 
   @Index('IDX_login_history_email')
@@ -24,13 +24,13 @@ export class LoginHistory extends BaseEntity {
   @Column({ type: 'enum', enum: LoginStatus })
   status: LoginStatus;
 
-  @Column({ type: 'varchar', length: 255, nullable: true })
+  @Column({ name: 'failure_reason', type: 'varchar', length: 255, nullable: true })
   failureReason: string | null;
 
-  @Column({ type: 'varchar', length: 45 })
+  @Column({ name: 'ip_address', type: 'varchar', length: 45 })
   ipAddress: string;
 
-  @Column({ type: 'text', nullable: true })
+  @Column({ name: 'user_agent', type: 'text', nullable: true })
   userAgent: string | null;
 
   @Column({ type: 'varchar', length: 100, nullable: true })

@@ -27,24 +27,24 @@ export class OtpCode extends BaseEntity {
   destination: string;
 
   @Index('IDX_otp_codes_user_id')
-  @Column({ type: 'uuid', nullable: true })
+  @Column({ name: 'user_id', type: 'uuid', nullable: true })
   userId: string | null;
 
-  @Column({ type: 'varchar', length: 64 })
+  @Column({ name: 'code_hash', type: 'varchar', length: 64 })
   codeHash: string;
 
-  @Column({ type: 'timestamp' })
+  @Column({ name: 'expires_at', type: 'timestamp' })
   expiresAt: Date;
 
   @Column({ type: 'int', default: 0 })
   attempts: number;
 
-  @Column({ type: 'int', default: 5 })
+  @Column({ name: 'max_attempts', type: 'int', default: 5 })
   maxAttempts: number;
 
-  @Column({ type: 'boolean', default: false })
+  @Column({ name: 'is_used', type: 'boolean', default: false })
   isUsed: boolean;
 
-  @Column({ type: 'timestamp', nullable: true })
+  @Column({ name: 'used_at', type: 'timestamp', nullable: true })
   usedAt: Date | null;
 }

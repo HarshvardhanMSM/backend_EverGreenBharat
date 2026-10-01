@@ -15,7 +15,7 @@ export class Role extends BaseEntity {
   @Column({ type: 'text', nullable: true })
   description: string | null;
 
-  @Column({ type: 'boolean', default: false })
+  @Column({ name: 'is_system', type: 'boolean', default: false })
   isSystem: boolean;
 
   @OneToMany(() => RolePermission, (rp) => rp.role)
