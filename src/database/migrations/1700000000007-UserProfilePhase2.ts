@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class UserProfilePhase21700000000007 implements MigrationInterface {
-  name = 'UserProfilePhase21700000000007';
+export class UserProfilePhase2_1700000000007 implements MigrationInterface {
+  name = 'UserProfilePhase2_1700000000007';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(

@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class CreatorManagementPhase21700000000003 implements MigrationInterface {
-  name = 'CreatorManagementPhase21700000000003';
+export class CreatorManagementPhase2_1700000000003 implements MigrationInterface {
+  name = 'CreatorManagementPhase2_1700000000003';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     // ─── 1. categories ────────────────────────────────────────────────────────

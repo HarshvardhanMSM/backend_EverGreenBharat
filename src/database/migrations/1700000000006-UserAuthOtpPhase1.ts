@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class UserAuthOtpPhase11700000000006 implements MigrationInterface {
-  name = 'UserAuthOtpPhase11700000000006';
+export class UserAuthOtpPhase1_1700000000006 implements MigrationInterface {
+  name = 'UserAuthOtpPhase1_1700000000006';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(

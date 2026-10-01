@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class AdminFoundationPhase1170000000002 implements MigrationInterface {
-  name = 'AdminFoundationPhase1170000000002';
+export class AdminFoundationPhase1_1700000000002 implements MigrationInterface {
+  name = 'AdminFoundationPhase1_1700000000002';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     // 1. Create admins status enum if not exists
