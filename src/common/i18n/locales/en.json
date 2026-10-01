@@ -1,0 +1,113 @@
+{
+  "common": {
+    "success": "Operation successful",
+    "created": "Resource created successfully",
+    "updated": "Resource updated successfully",
+    "deleted": "Resource deleted successfully",
+    "not_found": "Requested resource not found",
+    "bad_request": "Invalid request parameters",
+    "unauthorized": "Unauthorized access, please login",
+    "forbidden": "You do not have permission to perform this action",
+    "server_error": "Internal server error occurred",
+    "validation_error": "Validation failed for input data"
+  },
+  "auth": {
+    "login_success": "Login successful",
+    "register_success": "Registration successful. Welcome to Ever Green Bharat!",
+    "invalid_credentials": "Invalid email or password",
+    "otp_sent": "Verification code sent successfully",
+    "otp_verified": "Phone/Email verified successfully",
+    "otp_invalid": "Invalid or expired verification code",
+    "otp_max_attempts": "Maximum verification attempts exceeded. Please request a new OTP",
+    "password_changed": "Password updated successfully",
+    "password_reset_sent": "Password reset code sent to your email",
+    "password_reset_success": "Password has been reset successfully",
+    "logged_out": "Logged out successfully",
+    "token_refreshed": "Token refreshed successfully",
+    "account_locked": "Account temporarily locked due to too many failed attempts"
+  },
+  "users": {
+    "profile_retrieved": "User profile retrieved successfully",
+    "profile_updated": "User profile updated successfully",
+    "avatar_updated": "Avatar image uploaded successfully",
+    "cover_updated": "Cover image uploaded successfully",
+    "address_added": "Delivery address added successfully",
+    "address_updated": "Delivery address updated successfully",
+    "address_deleted": "Delivery address removed successfully"
+  },
+  "categories": {
+    "retrieved": "Categories retrieved successfully",
+    "created": "Category created successfully",
+    "updated": "Category updated successfully",
+    "deleted": "Category deleted successfully",
+    "not_found": "Category not found"
+  },
+  "products": {
+    "retrieved": "Products retrieved successfully",
+    "detail_retrieved": "Product details retrieved successfully",
+    "created": "Product created successfully",
+    "updated": "Product updated successfully",
+    "status_updated": "Product status updated successfully",
+    "not_found": "Product not found in inventory",
+    "out_of_stock": "Product is currently out of stock",
+    "master_catalog_match": "Product matched with master plant catalog"
+  },
+  "cart": {
+    "retrieved": "Cart items retrieved successfully",
+    "item_added": "Product added to cart",
+    "item_updated": "Cart item quantity updated",
+    "item_removed": "Item removed from cart",
+    "cleared": "Cart cleared successfully",
+    "empty": "Your cart is empty"
+  },
+  "orders": {
+    "created": "Order placed successfully",
+    "retrieved": "Orders retrieved successfully",
+    "detail_retrieved": "Order details retrieved successfully",
+    "status_updated": "Order status updated successfully",
+    "cancelled": "Order cancelled successfully",
+    "delivery_otp_generated": "Delivery verification OTP generated for customer",
+    "delivery_otp_verified": "Delivery OTP verified successfully. Order marked as DELIVERED",
+    "delivery_otp_invalid": "Invalid delivery OTP. Please verify with the customer",
+    "delivery_otp_expired": "Delivery OTP has expired. Please contact support",
+    "cannot_cancel": "Order cannot be cancelled in its current state"
+  },
+  "payments": {
+    "verified": "Payment verified successfully",
+    "failed": "Payment verification failed. Invalid signature",
+    "status_retrieved": "Payment status retrieved successfully"
+  },
+  "inquiries": {
+    "created": "Institutional inquiry submitted successfully. Our team will contact you shortly",
+    "retrieved": "Inquiry details retrieved successfully",
+    "updated": "Inquiry status updated successfully"
+  },
+  "influencers": {
+    "opt_in_submitted": "Green Army application submitted for review",
+    "post_created": "Gardening post published successfully",
+    "liked": "Post liked successfully",
+    "unliked": "Post unliked successfully",
+    "followed": "Influencer followed successfully",
+    "unfollowed": "Influencer unfollowed successfully",
+    "reported": "Content reported for moderation review"
+  },
+  "notifications": {
+    "retrieved": "Notifications retrieved successfully",
+    "marked_read": "Notification marked as read",
+    "all_marked_read": "All notifications marked as read",
+    "order_created_title": "Order Placed Successfully",
+    "order_created_body": "Your order #{orderNumber} for ₹{amount} has been placed.",
+    "order_confirmed_title": "Order Confirmed",
+    "order_confirmed_body": "Nursery {nurseryName} has confirmed your order #{orderNumber}.",
+    "out_for_delivery_title": "Out for Delivery - OTP: {otp}",
+    "out_for_delivery_body": "Your plants are on the way! Please share delivery OTP {otp} with the delivery partner at your doorstep.",
+    "delivered_title": "Order Delivered!",
+    "delivered_body": "Your order #{orderNumber} has been delivered successfully. Happy Gardening!",
+    "payment_success_title": "Payment Received",
+    "payment_success_body": "Payment of ₹{amount} for order #{orderNumber} was successful.",
+    "inquiry_received_title": "Inquiry Received",
+    "inquiry_received_body": "Thank you for contacting Ever Green Bharat. Our plant specialist will contact you soon.",
+    "new_follower_title": "New Green Army Follower",
+    "new_follower_body": "{username} started following your gardening updates!"
+  }
+}

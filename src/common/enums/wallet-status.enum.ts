@@ -1,0 +1,6 @@
+export enum WalletStatus {
+  ACTIVE = 'ACTIVE',
+  FROZEN = 'FROZEN',
+  PARTIALLY_FROZEN = 'PARTIALLY_FROZEN',
+  CLOSED = 'CLOSED',
+}

@@ -1,0 +1,8 @@
+export enum PaymentProvider {
+  STRIPE = 'STRIPE',
+  PAYPAL = 'PAYPAL',
+  RAZORPAY = 'RAZORPAY',
+  APPLE_PAY = 'APPLE_PAY',
+  GOOGLE_PAY = 'GOOGLE_PAY',
+  SYSTEM_INTERNAL = 'SYSTEM_INTERNAL',
+}

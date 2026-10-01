@@ -1,0 +1,12 @@
+export enum CreatorDocumentType {
+  GOVERNMENT_ID = 'GOVERNMENT_ID',
+  PORTRAIT = 'PORTRAIT',
+  PROOF_OF_ADDRESS = 'PROOF_OF_ADDRESS',
+}
+
+export enum CreatorDocumentStatus {
+  SUBMITTED = 'SUBMITTED',
+  VALIDATED = 'VALIDATED',
+  REJECTED = 'REJECTED',
+  EXPIRED = 'EXPIRED',
+}

@@ -1,0 +1,7 @@
+export enum CreatorStatus {
+  APPLIED = 'APPLIED',
+  UNDER_REVIEW = 'UNDER_REVIEW',
+  APPROVED = 'APPROVED',
+  REJECTED = 'REJECTED',
+  SUSPENDED = 'SUSPENDED',
+}

@@ -1,0 +1,5 @@
+export enum DiscountType {
+  PERCENTAGE = 'PERCENTAGE',
+  FIXED_COINS = 'FIXED_COINS',
+  COIN_MULTIPLIER = 'COIN_MULTIPLIER',
+}
