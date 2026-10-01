@@ -22,6 +22,7 @@ import { Vendor } from '../modules/vendors/entities/vendor.entity';
 import { Product } from '../modules/products/entities/product.entity';
 import { Order } from '../modules/orders/entities/order.entity';
 import { OrderItem } from '../modules/orders/entities/order-item.entity';
+import { Payment } from '../modules/payments/entities/payment.entity';
 import { InstitutionalInquiry } from '../modules/inquiries/entities/institutional-inquiry.entity';
 import { InfluencerProfile } from '../modules/influencers/entities/influencer-profile.entity';
 import { Post } from '../modules/influencers/entities/post.entity';
@@ -64,6 +65,7 @@ export const AppDataSource = new DataSource({
     Product,
     Order,
     OrderItem,
+    Payment,
     InstitutionalInquiry,
     InfluencerProfile,
     Post,
