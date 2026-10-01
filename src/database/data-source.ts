@@ -15,6 +15,7 @@ import { AuditLog } from '../modules/audit/entities/audit-log.entity';
 
 // Nursery Marketplace Entities
 import { Category } from '../modules/categories/entities/category.entity';
+import { CategoryAttribute } from '../modules/categories/entities/category-attribute.entity';
 import { Banner } from '../modules/banners/entities/banner.entity';
 import { MasterProduct } from '../modules/master-products/entities/master-product.entity';
 import { Vendor } from '../modules/vendors/entities/vendor.entity';
@@ -56,6 +57,7 @@ export const AppDataSource = new DataSource({
     OtpCode,
     AuditLog,
     Category,
+    CategoryAttribute,
     Banner,
     MasterProduct,
     Vendor,
