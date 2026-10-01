@@ -46,6 +46,7 @@ import { User } from './modules/users/entities/user.entity';
 import { UserBlock } from './modules/users/entities/user-block.entity';
 import { UserFollow } from './modules/users/entities/user-follow.entity';
 import { Admin } from './modules/admin/entities/admin.entity';
+import { SystemSetting } from './modules/admin/entities/system-setting.entity';
 import { Role } from './modules/rbac/entities/role.entity';
 import { Permission } from './modules/rbac/entities/permission.entity';
 import { RolePermission } from './modules/rbac/entities/role-permission.entity';
@@ -64,6 +65,9 @@ import { Vendor } from './modules/vendors/entities/vendor.entity';
 import { Product } from './modules/products/entities/product.entity';
 import { Order } from './modules/orders/entities/order.entity';
 import { OrderItem } from './modules/orders/entities/order-item.entity';
+import { Payment } from './modules/payments/entities/payment.entity';
+import { Cart } from './modules/cart/entities/cart.entity';
+import { CartItem } from './modules/cart/entities/cart-item.entity';
 import { InstitutionalInquiry } from './modules/inquiries/entities/institutional-inquiry.entity';
 import { InfluencerProfile } from './modules/influencers/entities/influencer-profile.entity';
 import { Post } from './modules/influencers/entities/post.entity';
@@ -112,6 +116,7 @@ import { DemoDataSeeder } from './database/seeders/demo-data.seeder';
           UserBlock,
           UserFollow,
           Admin,
+          SystemSetting,
           Role,
           Permission,
           RolePermission,
@@ -128,6 +133,9 @@ import { DemoDataSeeder } from './database/seeders/demo-data.seeder';
           Product,
           Order,
           OrderItem,
+          Payment,
+          Cart,
+          CartItem,
           InstitutionalInquiry,
           InfluencerProfile,
           Post,
